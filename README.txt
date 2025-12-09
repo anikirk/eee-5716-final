@@ -24,7 +24,7 @@ Instructions to run the code:
      * matplotlib
      * scikit-learn
      * openpyxl   (needed for reading .xlsx files)
-     (install with: `pip install numpy pandas matplotlib scikit-learn openpyxl`)
+     install with: `pip install numpy pandas matplotlib scikit-learn openpyxl`
 
 2. Running the notebook:
    - Navigate to the `code/` directory.

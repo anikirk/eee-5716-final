@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from data_utils import load_chip_data, group_by_trojan_type
 from models import evaluate_case1, evaluate_case2
+import os
 
 def run_all(folder):
     X, y = load_chip_data(folder)
@@ -23,6 +24,6 @@ def run_all(folder):
     return df
 
 if __name__ == "__main__":
-    folder = "dataset"
+    folder = os.path.join(os.path.dirname(__file__), "..", "ROFreq")
     results_df = run_all(folder)
     results_df.to_csv("comparative_results.csv", index=False)
